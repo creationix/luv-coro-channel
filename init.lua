@@ -1,4 +1,11 @@
 local exports = {}
+exports.name = "creationix/coro-channel"
+exports.version = "1.2.0"
+exports.homepage = "https://github.com/luvit/lit/blob/master/deps/coro-channel.lua"
+exports.description = "An adapter for wrapping uv streams as coro-streams and chaining filters."
+exports.tags = {"coro", "adapter"}
+exports.license = "MIT"
+exports.author = { name = "Tim Caswell" }
 
 local function wrapRead(socket)
   local paused = true
